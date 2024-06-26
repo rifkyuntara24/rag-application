@@ -1,5 +1,3 @@
-#<meta name="dicoding:email" content="rifkyuntara@gmail.com">
-
 import streamlit as st
 from models.model import initialize_llm, initialize_embeddings, initialize_vectorstore, create_rag_chain
 from langchain_community.document_loaders import PyPDFLoader
@@ -66,6 +64,7 @@ def handle_query():
             st.write("Please enter a query.")
 
 def main():
+    st.header("<meta name=dicoding:email content=rifkyuntara@gmail.com>")
     st.title("TolongAI!🚀")
     st.write("Tanya tentang AI tentang dokumen mu Disini!")
     st.write("Jurnal Ilmiah?, Modul Kuliah/Sekolah, Dokumen apapun berbentuk PDF tanyakan pada AI dan pasti akan Menjawabmu!")
