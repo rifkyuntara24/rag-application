@@ -64,9 +64,9 @@ def handle_query():
             st.write("Please enter a query.")
 
 def main():
-    st.header("<meta name=dicoding:email content=rifkyuntara@gmail.com>")
+    st.write("<meta name=dicoding:email content=rifkyuntara@gmail.com>")
     st.title("TolongAI!🚀")
-    st.write("Tanya tentang AI tentang dokumen mu Disini!")
+    st.write("Tanya AI tentang dokumen mu Disini!")
     st.write("Jurnal Ilmiah?, Modul Kuliah/Sekolah, Dokumen apapun berbentuk PDF tanyakan pada AI dan pasti akan Menjawabmu!")
     st.markdown("[Tentang Rifkuy di sini!](https://www.linkedin.com/in/muhammad-rifky-untara-858ab3228/)")
     
