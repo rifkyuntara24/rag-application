@@ -1,3 +1,5 @@
+#<meta name="dicoding:email" content="rifkyuntara@gmail.com">
+
 import streamlit as st
 from models.model import initialize_llm, initialize_embeddings, initialize_vectorstore, create_rag_chain
 from langchain_community.document_loaders import PyPDFLoader
@@ -64,11 +66,13 @@ def handle_query():
             st.write("Please enter a query.")
 
 def main():
-    st.title("Tanya Aku Aja!🚀")
-    st.write("Rifkuy yang bikin aku ada")
+    st.title("TolongAI!🚀")
+    st.write("Tanya tentang AI tentang dokumen mu Disini!")
+    st.write("Jurnal Ilmiah?, Modul Kuliah/Sekolah, Dokumen apapun berbentuk PDF tanyakan pada AI dan pasti akan Menjawabmu!")
     st.markdown("[Tentang Rifkuy di sini!](https://www.linkedin.com/in/muhammad-rifky-untara-858ab3228/)")
     
     st.sidebar.title("Settings")
+    st.write("Tenang Saja API dan Dokumen anda akan tetap Aman!")
     st.sidebar.markdown("[Get Groq API HERE!](https://console.groq.com/keys)")
     set_api_key()
     
