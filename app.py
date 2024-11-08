@@ -51,7 +51,7 @@ def handle_query():
     if st.button("Get Answer"):
         if input_text:
             try:
-                if "retriever" in st.session_state and "llm" in st.session_state:
+                if "retriever" in st.session_state or "llm" in st.session_state:
                     rag_chain = create_rag_chain(st.session_state["retriever"], st.session_state["llm"])
                     response = rag_chain.invoke({"input": input_text})
                     st.write("### Answer")
