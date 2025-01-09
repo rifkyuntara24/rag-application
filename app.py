@@ -73,6 +73,8 @@ def main():
     st.sidebar.title("Settings")
     st.sidebar.write("Tenang Saja API dan Dokumen anda akan tetap Aman!")
     st.sidebar.markdown("[Get Groq API HERE!](https://console.groq.com/keys)")
+    
+    st.sidebar.title("Settings")
     set_api_key()
     
     if "GROQ_API_KEY" in st.session_state:
